@@ -66,8 +66,8 @@ footer{grid-area: footer;}
     }
 
     h2{
-        font-size: 2rem;
-        padding-bottom: 1rem;
+        font-size: 2.3rem;
+        padding:1rem 0rem 1.5rem 0rem;
     }
 
     nav{
@@ -80,7 +80,7 @@ footer{grid-area: footer;}
     }
 
     nav li{
-        box-shadow: 0 4px 10px #e8ebd9;
+        box-shadow: 0 8px 15px -15px #afb1ac;
         padding: 1rem 5rem;
     }
 
@@ -92,4 +92,7 @@ footer{grid-area: footer;}
         margin-right: 2rem;
         padding-top: 2rem;
     }
+
+    .flex{display: flex;}
+    .artFlexItem{flex: 1;}
 }

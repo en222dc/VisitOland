@@ -1,5 +1,5 @@
 body{
-    background: #eccecd;
+    background: #585450;
 }
 
 h1, h2, h3, nav a{font-family: 'Montserrat', Arial, Helvetica, sans-serif;}
@@ -55,7 +55,7 @@ nav h2{
     font-size: 1.8rem;
     padding-bottom: 1.5rem;
     text-align: center;
-    box-shadow: 0 4px 10px #e8ebd9;
+    box-shadow: 0 8px 10px -10px #848581;
 }
 
 nav ul{list-style: none;}
