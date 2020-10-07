@@ -58,7 +58,7 @@ footer{grid-area: footer;}
     .container{
         display:grid;
         grid-template-columns: 1fr 1 fr 1fr 1fr 1fr;
-        column-gap: 2rem;
+        column-gap: 1.6rem;
         grid-template-areas:
         "header header header header header"
         "nav main main main main"
@@ -66,13 +66,12 @@ footer{grid-area: footer;}
     }
 
     h2{
-        font-size: 2.3rem;
-        padding:1rem 0rem 1.5rem 0rem;
+        font-size: 2.6rem;
     }
 
     nav{
-        margin-left: 2rem;
-        padding-top: 2rem;
+        margin-left: 1.6rem;
+        padding-top: 3.8rem;
     }
 
     nav ul{
@@ -89,8 +88,13 @@ footer{grid-area: footer;}
     }
 
     main{
-        margin-right: 2rem;
-        padding-top: 2rem;
+        margin-right: 1.6rem;
+        padding-top: 3.3rem;
+    }
+
+    img{
+        max-width: 95%;
+        margin: 1rem 0.5rem;
     }
 
     .flex{display: flex;}
