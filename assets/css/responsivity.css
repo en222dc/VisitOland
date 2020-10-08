@@ -1,8 +1,12 @@
+/* | GRIDS | */
+
 header{grid-area: header;}
 main{grid-area: main;}
 nav{grid-area: nav;}
 .footerLogos{grid-area: footerLogos;}
 .footerCopyright{grid-area: footerCopyright;}
+
+/* | MOBILE | */
 
 @media (max-width:640px){
     .container{
@@ -18,8 +22,6 @@ nav{grid-area: nav;}
 
     #navHeadline{display: none;}
     #footerHeadline{display: none;}
-
-   
 
     nav{padding: 1rem;}
 
@@ -63,6 +65,8 @@ nav{grid-area: nav;}
     }
 }
 
+/* | LARGER SCREENS | */
+
 @media (min-width:641px){
     .container{
         display:grid;
@@ -100,9 +104,13 @@ nav{grid-area: nav;}
 
     nav a{font-size: 1.5rem;}
 
-    .topLevelMenu li{padding: 0.1rem 3rem;}
+    .navLi{padding: 0.1rem 3rem;}
     
-    .second-level-menu{border-radius: 10%;}
+    .secondLevelMenu{left: 10%;}
+    .secondLevelMenu li{
+        margin: 0;
+        padding: 0;
+    }
 
     main{
         margin-right: 0.6rem;

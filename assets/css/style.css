@@ -1,3 +1,5 @@
+/* || GENERAL || */
+
 body{background: #585450;}
 
 h2, h3, h4, nav a{font-family: 'Montserrat', Arial, Helvetica, sans-serif;}
@@ -12,13 +14,14 @@ p, li a{
     line-height: 1.5rem;
 }
 
-.radio label{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
-    padding-left: 1.5rem;
-}
-
 ul{padding-top: 0.5rem;}
+
+nav, main, footer{background: #f7fae7f2;}
+
+main{padding: 2rem 0rem;}
+
+
+/* || HEADER || */
 
 .headerImgContainer{
     position: relative;
@@ -59,7 +62,8 @@ header h2{
     position: absolute;
 }
 
-nav, main, footer{background: #f7fae7f2;}
+
+/* || MENU || */
 
 nav ul{list-style: none;}
 
@@ -72,19 +76,26 @@ nav a{
 #active{font-weight: bolder;}
 
 .topLevelMenu li:hover > ul{display: inline;}
+
 .topLevelMenu a {display: block;}
 
 .secondLevelMenu{
     position: absolute;
     display: none;
-    background: #f7fae7f2;
+    background: #ffffff;
     border: 1px solid #757371;
 }
 
-.secondLevelMenu > li{padding: 0rem;}
-.secondLevelMenu > li:hover { display: inline; }
+.secondLevelMenu li{
+    padding: 0.5rem;
+}
 
-main{padding: 2rem 0rem;}
+.secondLevelMenu > li:hover{
+    display: inline; 
+}
+
+
+/* || IMAGES AND FORMS || */
 
 img {
     display: block;
@@ -94,6 +105,7 @@ img {
 .img{
     margin: 1rem 0rem;
 }
+
 figcaption{
     text-align: center;
     font-style: italic;
@@ -113,8 +125,16 @@ figcaption{
     float: left;
   }
 
+  .radio label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding-left: 1.5rem;
+}
+
 input:focus, select:focus, textarea:focus{background-color: #e4e4e4;}
 
+
+/* || FOOTER || */
 .flexLogos{
     display: flex;
     justify-content: space-around;
@@ -122,6 +142,7 @@ input:focus, select:focus, textarea:focus{background-color: #e4e4e4;}
 }
 
 .footerLogos{background-color: #e4e4e4f2;}
+
 .footerCopyright{background-color: #c7c4c4f2;}
 
 #copyright, footer p a{
