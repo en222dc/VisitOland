@@ -19,21 +19,22 @@ nav{grid-area: nav;}
     #navHeadline{display: none;}
     #footerHeadline{display: none;}
 
-    h2{
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-    }
+   
 
     nav{padding: 1rem;}
 
-    nav ul
-    {
+    nav ul{
         display: flex;
         justify-content: space-around;
     }
     nav a{
         font-size: 0.7rem;
         padding: 0rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     .headerTextContainer{
@@ -55,6 +56,10 @@ nav{grid-area: nav;}
         padding: 2rem 0rem;
         left: 10%;
         top: 22%;
+    }
+
+    fieldset{
+        width: 75%; 
     }
 }
 
@@ -90,10 +95,14 @@ nav{grid-area: nav;}
 
     nav li{
         box-shadow: 0 8px 15px -15px #afb1ac;
-        padding: 1rem 5rem;
+        padding: 0rem 5rem;
     }
 
     nav a{font-size: 1.5rem;}
+
+    .topLevelMenu li{padding: 0.1rem 3rem;}
+    
+    .second-level-menu{border-radius: 10%;}
 
     main{
         margin-right: 0.6rem;

@@ -23,45 +23,74 @@
             </header>
             <nav>
                 <h2 id="navHeadline">Upplev Öland</h2>
-                <ul>
+                <ul class="topLevelMenu">
                     <li class="navLi"><a href="../index.html">Hem</a></li>
                     <li class="navLi"><a href="../html/nature.html">Natur</a></li>
-                    <li class="navLi"><a href="../html/sights/sights.html">Att se</a></li>
-                    <li class="navLi"><a href="#"  id="active">Kontakt</a></li>
+                    <li class="navLi">
+                        <a href="../html/sights/sights.html">Att se</a>
+                        <ul class="secondLevelMenu">
+                            <li class="navLi"><a href="../html/sights/borgholms_castle.html">Borgholms slott</a></li>
+                        </ul>
+                    </li>
+                    <li class="navLi"><a href="#" id="active">Kontakt</a></li>
                 </ul>
             </nav>
             <main>
                 <article>
-                    <h2>Vill du komma i kontakt med mig?</h2>
+                    <h2>Vill du komma i kontakt med oss?</h2>
+                    <p>
+                        Kanske har du tips på någon härlig sevärdhet du tycker att vi bör ha med här på sidan?
+                        Eller så kanske du har åsikter om någon felaktighet som råkat smyga sig in här?
+                        Skriv gärna till oss här eller via våra sociala medier som länkas nedan.
+                    </p>
+                    
                     <div class="flex">
                         <div class="artFlexItem">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus, 
-                                enim vel varius tristique, nisi diam cursus nisl, nec lobortis urna enim 
-                                sed lectus. Aliquam sapien ipsum, ullamcorper non convallis et, 
-                                condimentum a sapien. Maecenas orci enim, sollicitudin in ultricies at, 
-                                sagittis in turpis. Aliquam eu gravida mi, at venenatis tellus. Quisque 
-                                sit amet nulla a quam lobortis iaculis id eget elit. Sed accumsan laoreet 
-                                interdum. Mauris facilisis iaculis neque vel varius. Pellentesque dictum 
-                                convallis lorem quis maximus. Pellentesque felis lectus, maximus sed 
-                                condimentum porttitor, lacinia in nisi. Phasellus bibendum dolor sit amet 
-                                laoreet porta. Vivamus id ex eget nisl porttitor lobortis. Donec sit amet 
-                                nulla aliquam, lacinia libero sed, faucibus erat. Aenean et tellus mi. 
-                                Nullam sit amet urna suscipit, iaculis ipsum eget, tincidunt nisl.</p>
-                            <p>
-                                Mauris sagittis dignissim lacinia. Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit. Phasellus vel magna at purus hendrerit semper non in leo. 
-                                Ut at nibh porta, mattis felis at, dictum leo. Nam fringilla lectus id orci 
-                                dapibus blandit. Nullam vulputate urna a blandit pellentesque. Morbi ornare 
-                                placerat neque, quis rutrum purus. Etiam imperdiet mollis augue. Vivamus 
-                                gravida risus et quam suscipit vestibulum. Sed sit amet quam eros. Ut congue 
-                                ultrices ipsum, vel volutpat dolor commodo a. Maecenas quis scelerisque turpis. 
-                                Suspendisse hendrerit nisi eget ante mattis porttitor. Etiam sed felis ipsum. 
-                                Ut blandit nulla lectus, id congue lectus lobortis eu. Aliquam rhoncus et tellus 
-                                vitae lobortis.
-                            </p>
+                            <article>
+                                <h3>Kontaktformulär</h3>
+                                <form action="tack.html" method="GET">
+                                    <fieldset>
+                                        <p>
+                                            <label for="Headline">Rubrik*</label>
+                                            <input type="text" id="Headline" name="headline" required />
+                                        </p>
+                                        <p>
+                                            <label for="About">Beskriv ditt ärende*</label>
+                                            <textarea id="About" name="about" rows="10" cols="30" required></textarea>
+                                        </p>
+                                        <p>Hur vill du att vi återkopplar?</p>
+                                        <ul>
+                                            <li class="radio">
+                                                <input type="radio" id="Mail" name="feedback" value="mail" />
+                                                <label for="Mail">Mail</label>
+                                            </li>
+                                            <li class="radio">
+                                                <input type="radio" id="Phone" name="feedback" value="phone" />
+                                                <label for="Phone">Telefon</label>
+                                            </li>
+                                            <li class="radio">
+                                                <input type="radio" id="None" name="feedback" value="none" />
+                                                <label for="None">Inte alls</label>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            <label for="Email">Mail</label>
+                                            <input type="email" id="Email" name="mail"/>
+                                        </p>
+                                        <p>
+                                            <label for="Tel">Telefon</label>
+                                            <input type="tel" id="Tel" name="telefon"/>
+                                        </p>
+                                        <p>
+                                            <input type="submit" value="Skicka">
+                                            <input type="reset" value="Rensa">
+                                        </p>
+                                    </fieldset>
+                                </form>
+                            </article>
                         </div>
                         <figure>
-                            <img class="img" src="../assets/images/stranden_sommar.jpg" alt="Folktom strand, tidig säsong.">
+                            <img class="img" src="../assets/images/blomma_pa_alvaret.jpg" alt="Blomma på Alvaret">
                         </figure>
                     </div>
                 </article>
@@ -82,7 +111,7 @@
             </div>
         </footer>
         <footer class="footerCopyright">
-            <p id="copyright">© Evelina Söderberg</p>
+            <p id="copyright">© Evelina Söderberg | <a href="#">mail@gmail.com</a></p>
         </footer>
     </body>
 </html>

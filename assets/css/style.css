@@ -12,6 +12,12 @@ p, li a{
     line-height: 1.5rem;
 }
 
+.radio label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding-left: 1.5rem;
+}
+
 ul{padding-top: 0.5rem;}
 
 .headerImgContainer{
@@ -65,6 +71,19 @@ nav a{
 
 #active{font-weight: bolder;}
 
+.topLevelMenu li:hover > ul{display: inline;}
+.topLevelMenu a {display: block;}
+
+.secondLevelMenu{
+    position: absolute;
+    display: none;
+    background: #f7fae7f2;
+    border: 1px solid #757371;
+}
+
+.secondLevelMenu > li{padding: 0rem;}
+.secondLevelMenu > li:hover { display: inline; }
+
 main{padding: 2rem 0rem;}
 
 img {
@@ -81,6 +100,20 @@ figcaption{
     font-weight: lighter;
     padding-bottom: 2rem;
 }
+
+  fieldset{
+    background: #f1f1f1;
+    border: 0.1rem solid #e1e2db;
+    margin: 1.5rem auto;
+    width: 25rem;
+  }
+
+  label{
+    width: 15rem;
+    float: left;
+  }
+
+input:focus, select:focus, textarea:focus{background-color: #e4e4e4;}
 
 .flexLogos{
     display: flex;

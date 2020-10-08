@@ -23,16 +23,21 @@
             </header>
             <nav>
                 <h2 id="navHeadline">Upplev Öland</h2>
-                <ul>
+                <ul class="topLevelMenu">
                     <li class="navLi"><a href="../../index.html">Hem</a></li>
                     <li class="navLi"><a href="../nature.html">Natur</a></li>
-                    <li class="navLi"><a href="#" id="active">Att se</a></li>
+                    <li class="navLi">
+                        <a href="#" id="active">Att se</a>
+                        <ul class="secondLevelMenu">
+                            <li class="navLi"><a href="../../html/sights/borgholms_castle.html">Borgholms slott</a></li>
+                        </ul>
+                    </li>
                     <li class="navLi"><a href="../contact.html">Kontakt</a></li>
                 </ul>
             </nav>
             <main>
                 <article>
-                    <h2>Att Se</h2>
+                    <h2>Att se</h2>
                     <div class="flex">
                         <div class="artFlexItem">
                             <p>
@@ -93,7 +98,7 @@
             </div>
         </footer>
         <footer class="footerCopyright">
-            <p id="copyright">© Evelina Söderberg</p>
+            <p id="copyright">© Evelina Söderberg | <a href="#">mail@gmail.com</a></p>
         </footer>
     </body>
 </html>
