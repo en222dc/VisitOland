@@ -1,15 +1,18 @@
 body{background: #585450;}
 
-h2, h3, nav a{font-family: 'Montserrat', Arial, Helvetica, sans-serif;}
+h2, h3, h4, nav a{font-family: 'Montserrat', Arial, Helvetica, sans-serif;}
 
 h2{padding: 0rem 1.5rem 1.7rem 1.5rem;}
+h3{padding: 0rem 1.5rem;}
 
-p, p a{
+p, li a{
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem 1.5rem;
     font-size: 1.1rem;
     line-height: 1.5rem;
 }
+
+ul{padding-top: 0.5rem;}
 
 .headerImgContainer{
     position: relative;
@@ -71,6 +74,12 @@ img {
 
 .img{
     margin: 1rem 0rem;
+}
+figcaption{
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    padding-bottom: 2rem;
 }
 
 .flexLogos{

@@ -31,7 +31,10 @@ nav{grid-area: nav;}
         display: flex;
         justify-content: space-around;
     }
-    nav a{font-size: 0.7rem;}
+    nav a{
+        font-size: 0.7rem;
+        padding: 0rem;
+    }
 
     .headerTextContainer{
         margin: 9%;
@@ -68,6 +71,7 @@ nav{grid-area: nav;}
     }
 
     h2{font-size: 2.6rem;}
+    h3{font-size: 1.6rem;}
 
     nav{
         margin-left: 0.6rem;
@@ -98,7 +102,13 @@ nav{grid-area: nav;}
 
     .img{
         max-width: 95%;
-        margin: 1rem 0.5rem;
+        margin: 1rem 1.5rem;
+        box-shadow: 0 0 15px 5px #848581;
+    }
+
+    .imgFull{
+        max-width: 97%;
+        margin: 2rem auto;
         box-shadow: 0 0 15px 5px #848581;
     }
 
