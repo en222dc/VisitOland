@@ -31,8 +31,11 @@ nav{grid-area: nav;}
     }
     nav a{
         font-size: 0.7rem;
-        padding: 0rem;
+        padding: 0;
     }
+    nav li{padding: 0.1rem 1rem;}
+
+    .secondLevelMenu li{padding: 0.7rem;}
     
     h2{
         font-size: 1.5rem;
@@ -60,12 +63,12 @@ nav{grid-area: nav;}
         top: 22%;
     }
 
-    fieldset{
-        width: 75%; 
-    }
+    .img{margin: 1rem auto;}
+
+    fieldset{width: 75%;}
 }
 
-/* | LARGER SCREENS | */
+/* | LARGER SCREENS (APPROX 1920*1080) | */
 
 @media (min-width:641px){
     .container{
@@ -108,6 +111,7 @@ nav{grid-area: nav;}
     .navLi{padding: 0.1rem 3rem;}
     
     .secondLevelMenu{left: 10%;}
+
     .secondLevelMenu li{
         margin: 0;
         padding: 0;
